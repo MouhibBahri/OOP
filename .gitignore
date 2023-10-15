@@ -1,0 +1,3 @@
+# Ignore everything within the "TPi" folders except the "src" subfolder
+/TP[1-5]/*
+!/TP[1-5]/src/
