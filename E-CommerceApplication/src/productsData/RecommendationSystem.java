@@ -27,7 +27,6 @@ public class RecommendationSystem {
             if (!targetUserPurchasedProducts.containsKey(product.getValue().getProductId()) && categoryCount.containsKey(product.getValue().getClass().getSimpleName())) {
                 double q = categoryCount.get(product.getValue().getClass().getSimpleName()) * 0.02;
                 product.getValue().setScore(q);
-                ProductModel a;
             }
 
         }

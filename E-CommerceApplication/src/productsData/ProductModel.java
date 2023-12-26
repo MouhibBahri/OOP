@@ -85,7 +85,7 @@ public abstract class ProductModel {
         line = reader.readLine();
         this.quantityInStock = Integer.parseInt(line.substring("Quantity in Stock: ".length()));
         readSpecificAttributes(reader);
-        line = reader.readLine();
+        reader.readLine();
     }
 
     public abstract void readSpecificAttributes(BufferedReader reader) throws IOException;

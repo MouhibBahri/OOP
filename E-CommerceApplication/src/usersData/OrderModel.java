@@ -7,10 +7,10 @@ import java.util.*;
 
 public class OrderModel {
     private int orderId;
-    private Customer customer;
-    private Map<String, Integer> items;//productID, quantity
+    private final Customer customer;
+    private final  Map<String, Integer> items;//productID, quantity
 
-    private double totalPrice;
+    private final double totalPrice;
 
     public OrderModel(Customer customer) {//in case of new order
         this.orderId = OrdersList.getNextOrderID();

@@ -100,7 +100,7 @@ public class WelcomeScreen implements ISharedFunctions {
         println("");
         IService service;
         if (user instanceof Customer) {
-            service = new CustomerService((Customer) user);
+            service = new CustomerService(user);
         } else {
             service = new AdminService();
         }

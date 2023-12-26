@@ -1,10 +1,10 @@
 package usersData;
 
 public class UserModel {
-    private String fullname;
-    private String email;
-    private String username;
-    private String password;
+    private final String fullname;
+    private final String email;
+    private final String username;
+    private final String password;
 
     public UserModel(String fullname, String email, String username, String password) {
         this.fullname = fullname;

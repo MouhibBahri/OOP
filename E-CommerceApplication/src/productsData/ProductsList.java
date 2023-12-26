@@ -1,7 +1,5 @@
 package productsData;
 
-import usersData.UserModel;
-
 import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -9,7 +7,7 @@ import java.util.stream.Collectors;
 public class ProductsList {
     private static final Map<String, ProductModel> products;
     private static ArrayList<ProductModel> productsList;
-    private static String filePath = "products.txt";
+    private final static String filePath = "products.txt";
 
     static {
         products = new TreeMap<>();
@@ -24,17 +22,13 @@ public class ProductsList {
             String line;
             while ((line = reader.readLine()) != null) {
                 String category = line.substring("Category: ".length());
-                ProductModel product;
-                if (category.equals("AdventureGear"))
-                    product = new AdventureGear();
-                else if (category.equals("TravelEssentials"))
-                    product = new TravelEssentials();
-                else if (category.equals("ExplorationTools"))
-                    product = new ExplorationTools();
-                else if (category.equals("HealthAndFitness"))
-                    product = new HealthAndFitness();
-                else
-                    product = new Others();
+                ProductModel product = switch (category) {
+                    case "AdventureGear" -> new AdventureGear();
+                    case "TravelEssentials" -> new TravelEssentials();
+                    case "ExplorationTools" -> new ExplorationTools();
+                    case "HealthAndFitness" -> new HealthAndFitness();
+                    default -> new Others();
+                };
                 product.readProduct(reader);
 
                 products.put(product.getProductId(), product);

@@ -237,7 +237,7 @@ class ManageProducts implements IEntityManager {
     }
 
     public void ManageEntity() {
-        showOptions("Product", "Nice mystery number! \uD83D\uDD75\uFE0F\u200D♂\uFE0F Our game loves lively digits, shoot for 1-6! \uD83C\uDFB2");
+        showOptions("Product", "Nice mystery number! \uD83D\uDD75️\u200D♂️ Our game loves lively digits, shoot for 1-6! \uD83C\uDFB2");
 
     }
 
