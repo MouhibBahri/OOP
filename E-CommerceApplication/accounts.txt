@@ -1,0 +1,24 @@
+Type: Customer
+Full Name: Mouhib Bahri
+Email: mouhib@HikeHaven.com
+Username: Mouhib20
+Password: hUv9DE
+
+Type: Admin
+Full Name: Mouhib Bahri
+Email: mouhib@gmail.com
+Username: admin
+Password: admin
+
+Type: Customer
+Full Name: Ahmed Bouzid
+Email: ahmed@gmail.com
+Username: ahmed20
+Password: ahmed20
+
+Type: Customer
+Full Name: Mouhib Bahri
+Email: mouhib@gmail.com
+Username: mouhib20
+Password: mouhib20
+
